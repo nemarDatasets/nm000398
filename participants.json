@@ -1,0 +1,38 @@
+{
+  "age": {
+    "Description": "Age (article Table 1)",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "Sex (article Table 1)",
+    "Levels": {
+      "M": "male",
+      "F": "female"
+    }
+  },
+  "handedness": {
+    "Description": "Handedness (article Table 1)",
+    "Levels": {
+      "R": "right",
+      "L": "left"
+    }
+  },
+  "seizure_foci": {
+    "Description": "Seizure foci (article Table 1): ATL anterior temporal lobe, LTL lateral temporal lobe, PSTG posterior superior temporal gyrus"
+  },
+  "grid_location": {
+    "Description": "Grid location (article Table 1): left frontal/temporal/parietal"
+  },
+  "wake_hours_paper": {
+    "Description": "Hours of wake data sampled for the article's analyses (Table 1); the release contains 2 wake epochs only",
+    "Units": "hour"
+  },
+  "sleep_hours_paper": {
+    "Description": "Hours of sleep data sampled for the article's analyses (Table 1); the release contains 2 sleep epochs only",
+    "Units": "hour"
+  },
+  "sampling_frequency_readme": {
+    "Description": "Sampling frequency stated per subject in README_for_SubA_Sleep1.pdf (the article states 256 Hz)",
+    "Units": "Hz"
+  }
+}

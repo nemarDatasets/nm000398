@@ -1,0 +1,49 @@
+{
+  "Name": "Wakeful and sleep-like states in subdural ECoG (Pahwa et al., 2015): 4 patients, 64-channel grids",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "License": "CC0-1.0",
+  "Authors": [
+    "Mrinal Pahwa",
+    "Matthew Kusner",
+    "Carl D. Hacker",
+    "David T. Bundy",
+    "Kilian Q. Weinberger",
+    "Eric C. Leuthardt"
+  ],
+  "EthicsApprovals": [
+    "This study was approved by the Human Research Protection Office at Washington University School of Medicine. All patients gave informed written consent prior to participation. [Pahwa et al. 2015, PLoS One 10:e0142947, Ethics Statement]"
+  ],
+  "Funding": [
+    "National Science Foundation Emerging Frontiers in Research and Innovation grant EFRI1137211",
+    "National Institute of Mental Health Fellowship 1F30MH099877-01-A1",
+    "Washington University Institute of Clinical and Translational Sciences grant UL1 TR000448",
+    "National Center for Advancing Translational Sciences grant TL1 TR000449"
+  ],
+  "HowToAcknowledge": "Cite Pahwa M, Kusner M, Hacker CD, Bundy DT, Weinberger KQ, Leuthardt EC (2015) Optimizing the detection of wakeful and sleep-like states for future electrocorticographic brain computer interface applications. PLoS One 10(11):e0142947, doi:10.1371/journal.pone.0142947; and the Dryad dataset doi:10.5061/dryad.4f92n.",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1371/journal.pone.0142947",
+    "https://doi.org/10.5061/dryad.4f92n"
+  ],
+  "Keywords": [
+    "electrocorticography",
+    "ECoG",
+    "sleep",
+    "wake",
+    "brain-computer interface",
+    "epilepsy monitoring"
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5061/dryad.4f92n",
+      "URL": "https://datadryad.org/dataset/doi:10.5061/dryad.4f92n",
+      "Version": "Dryad version 1 (published 2016-01-26)"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "b3w3_convert_pahwa.py",
+      "Description": "Release 'data' matrices written as BrainVision float32 (values identical); sampling rate from the release README PDF. Code in code/."
+    }
+  ]
+}

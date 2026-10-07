@@ -1,0 +1,25 @@
+{
+  "TaskName": "sleep",
+  "TaskDescription": "Sleep-like state: epoch in which the patient, free-behaving in the epilepsy monitoring unit, appeared asleep on video and audio; state unchanged for at least 20 min (article).",
+  "Instructions": "none: no task; natural behaviour during clinical monitoring",
+  "SamplingFrequency": 512.0,
+  "PowerLineFrequency": 60,
+  "SoftwareFilters": "n/a",
+  "HardwareFilters": {
+    "HighpassFilter": {
+      "CutoffFrequency": 0.1,
+      "Description": "hardware high-pass built into the recording amplifiers (README_for_SubA_Sleep1.pdf)"
+    }
+  },
+  "iEEGReference": "n/a (not stated in the release or article)",
+  "Manufacturer": "Natus (Nicolet)",
+  "ManufacturersModelName": "Nicolet c128 (amplifiers named in the article)",
+  "RecordingDuration": 1717.5625,
+  "RecordingType": "continuous",
+  "ECOGChannelCount": 64,
+  "SEEGChannelCount": 0,
+  "iEEGPlacementScheme": "8x8 subdural grid over left frontal, temporal and parietal cortex (article, Fig 2); positions shown only as an image in README_for_SubA_Sleep1.pdf",
+  "iEEGElectrodeInfo": "PMT Corporation grids, flat circular platinum electrodes, 2.3 mm exposed diameter (article)",
+  "ElectricalStimulation": false,
+  "SamplingFrequencySource": "README_for_SubA_Sleep1.pdf (the .mat files store no sampling rate); the article's Methods state 256 Hz"
+}
