@@ -1,5 +1,5 @@
-participant_id	age	sex	handedness	seizure_foci	grid_location	wake_hours_paper	sleep_hours_paper	sampling_frequency_readme
-sub-A	44	F	R	ATL	Left F/T/P	77.3	54.7	256
-sub-B	55	M	R	LTL	Left F/T/P	66.7	78.6	512
-sub-C	21	F	L	ATL	Left F/T/P	62.3	35.5	512
-sub-D	29	M	R	PSTG	Left F/T/P	52.5	31.4	512
+participant_id	age	sex	handedness	seizure_foci	grid_location	wake_hours_paper	sleep_hours_paper	sampling_frequency_readme	diagnosis	implant_type	implanted_hemisphere
+sub-A	44	F	R	ATL	Left F/T/P	77.3	54.7	256	intractable epilepsy	ECoG (8x8 subdural grid, PMT)	L
+sub-B	55	M	R	LTL	Left F/T/P	66.7	78.6	512	intractable epilepsy	ECoG (8x8 subdural grid, PMT)	L
+sub-C	21	F	L	ATL	Left F/T/P	62.3	35.5	512	intractable epilepsy	ECoG (8x8 subdural grid, PMT)	L
+sub-D	29	M	R	PSTG	Left F/T/P	52.5	31.4	512	intractable epilepsy	ECoG (8x8 subdural grid, PMT)	L

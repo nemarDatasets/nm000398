@@ -34,5 +34,14 @@
   "sampling_frequency_readme": {
     "Description": "Sampling frequency stated per subject in README_for_SubA_Sleep1.pdf (the article states 256 Hz)",
     "Units": "Hz"
+  },
+  "diagnosis": {
+    "Description": "Paper Methods: 'undergoing surgical treatment for intractable epilepsy at Barnes Jewish Hospital'."
+  },
+  "implant_type": {
+    "Description": "Paper Methods/Fig 2: subdural 8x8 ECoG grids by PMT, flat circular Pt electrodes 2.3 mm diameter, 10 mm inter-electrode distance."
+  },
+  "implanted_hemisphere": {
+    "Description": "Paper Table 1 'Grid location: Left F/T/P' and Fig 2 caption."
   }
 }

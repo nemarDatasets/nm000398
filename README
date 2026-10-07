@@ -43,3 +43,15 @@ specific to the released files; it is not verifiable from the files themselves.
 ## Privacy
 - No names, dates of recording or hospital identifiers in the files. The README PDF names the corresponding author
   (contact e-mail), not patients. File-creation dates (MAT header, PDF metadata) reduced to month and year.
+
+## Additional metadata and localisation (added 2026-10-08)
+
+Compiled after the upload from the article, its supplement and the source deposit (each statement names its source). Text and sidecar metadata only; no data file was changed.
+
+Sources: P = Pahwa, Kusner, Hacker, Bundy, Weinberger, Leuthardt 2015, PLoS ONE 10(11):e0142947, doi:10.1371/journal.pone.0142947 (PMC4643046). R = deposit README_for_SubA_Sleep1.pdf (one page).
+
+**Reference.** All electrodes were referenced to a skull-facing electrode of the same size (P, Methods). The analysis also regressed out the mean of non-noisy electrodes (P).
+
+**Electrodes.** PMT subdural grids, 8x8, flat circular platinum electrodes of 2.3 mm diameter with 10 mm spacing, over the left frontal, temporal and parietal cortex (P, Methods and Fig 2).
+
+**Localisation.** The cortex was reconstructed from the pre-op T1 and electrodes located on the post-op CT. Electrodes and surface were co-registered to a common atlas space and projected onto the pial surface along the grid normal, keeping 10 mm spacing (after Hermes et al. 2010) (P, "Construction of Subject-averaged Cortical Maps"). The electrode positions for each subject appear only as figures (P Fig 2A; R). No coordinates or per-electrode anatomical labels were deposited, and the file channel order is not linked to grid position.
