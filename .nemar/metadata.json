@@ -1,0 +1,105 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Mrinal Pahwa": {},
+    "Matthew Kusner": {},
+    "Carl D. Hacker": {},
+    "David T. Bundy": {},
+    "Kilian Q. Weinberger": {},
+    "Eric C. Leuthardt": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5061/dryad.4f92n",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1371/journal.pone.0142947",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000398",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000398",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "National Science Foundation",
+      "award_number": "EFRI1137211",
+      "award_title": "Emerging Frontiers in Research and Innovation"
+    },
+    {
+      "funder_name": "National Institute of Mental Health",
+      "award_number": "1F30MH099877-01-A1"
+    },
+    {
+      "funder_name": "Washington University Institute of Clinical and Translational Sciences",
+      "award_number": "UL1 TR000448"
+    },
+    {
+      "funder_name": "National Center for Advancing Translational Sciences",
+      "award_number": "TL1 TR000449"
+    }
+  ],
+  "title": "Wakeful and sleep-like states in subdural ECoG (Pahwa et al., 2015): 4 patients, 64-channel grids",
+  "license": "CC0-1.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "8.79 GB (71 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".mat",
+    ".pdf",
+    ".py",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "Subdural electrocorticography (ECoG) recordings from four patients with intractable epilepsy, acquired with 8x8 electrode grids over left frontal, temporal and parietal cortex during clinical monitoring. For each patient, two wakeful and two sleep-like epochs were identified from video and audio of natural behaviour, with no task. The data support work on detecting wake and sleep-like states for future ECoG brain-computer interface applications.",
+  "methods_description": "Subdural 64-channel ECoG grids recorded during clinical epilepsy monitoring, with only the amplifiers' 0.1 Hz hardware high-pass applied. Wakeful and sleep-like epochs were identified from video and audio of natural behaviour. Sampling rates were taken from the release README (256 Hz for subject A, 512 Hz for subjects B, C and D). The released MATLAB matrices were converted to BrainVision float32 format with identical values.",
+  "keywords": [
+    {
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "ECoG"
+    },
+    {
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
+    },
+    {
+      "term": "Wakefulness",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014851"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "epilepsy monitoring"
+    }
+  ],
+  "source_hash": "006949a10a87374d9dec6463f7cc5245242484e0d570239eb5f00b19052b4114"
+}
