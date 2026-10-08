@@ -1,0 +1,59 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000398-blue)](https://doi.org/10.82901/nemar.nm000398)
+
+# Wakeful and sleep-like states in subdural ECoG (Pahwa et al., 2015)
+
+Subdural ECoG from four patients with intractable epilepsy (Barnes Jewish Hospital, St. Louis) with 8x8 grids over left
+frontal, temporal and parietal cortex. For each patient the release gives two "wakeful" and two "sleep-like" epochs,
+identified from video/audio of natural behaviour during clinical monitoring (no task).
+
+## Source
+- Dryad: Pahwa M, Kusner M, Hacker CD, Bundy DT, Weinberger KQ, Leuthardt EC. Data from: Optimizing the detection of
+  wakeful and sleep-like states for future electrocorticographic brain computer interface applications.
+  doi:10.5061/dryad.4f92n (version 1, 2016-01-26). License: CC0 1.0 (Dryad).
+- Article: PLoS One 10(11):e0142947 (2015), doi:10.1371/journal.pone.0142947 (open access, PMC4643046).
+- All 24 Dryad files were downloaded through the Dryad API and matched the Dryad md5 digests and sizes.
+
+## Sampling rate (important)
+The .mat files contain only a 64-column 'data' matrix: no sampling rate, channel names or units. The sampling rate
+used here comes from the release README (README_for_SubA_Sleep1.pdf): subject A 256 Hz, subjects B, C and D 512 Hz.
+The article's Methods say the signals were "sampled at 256 Hz" for all patients. We follow the README, which is
+specific to the released files; it is not verifiable from the files themselves.
+
+## Contents
+- `sub-<A-D>/ieeg/sub-<X>_task-<wake|sleep>[_acq-part<k>]_run-<n>_ieeg.*`: 23 files, 13.62 h in
+  total at the README rates. `run` = epoch number of the release (Sleep1/Sleep2/Wake1/Wake2). Epochs released as two
+  files (`_part1`, `_part2`) are kept as two files (`acq-part1`, `acq-part2`); the part lengths differ by at most one
+  sample, consistent with one recording cut in half, but the release does not say so. Mean absolute sample-to-sample
+  step at the junction vs typical step (µV): A_sleep2: 12.1 vs 11.6; A_wake1: 15.0 vs 27.7; A_wake2: 21.7 vs 36.5; B_sleep2: 74.7 vs 78.1; B_wake2: 33.5 vs 77.8; C_sleep2: 41.6 vs 43.8; D_sleep1: 33.6 vs 46.8.
+- Channels `ch01`..`ch64` = columns 1-64 of the release matrix, typed ECOG. Electrode positions are shown only as
+  images in the README PDF (kept in sourcedata); no coordinates or labels are released.
+- Several files have many samples at the amplitude limit |x| = 5482.29 (saturation), mostly subjects B and D
+  (more than half of the samples of at least one channel in: SubB_Sleep1.mat, SubB_Sleep2_part1.mat, SubB_Sleep2_part2.mat, SubB_Wake1.mat, SubB_Wake2_part1.mat, SubB_Wake2_part2.mat, SubD_Sleep2.mat, SubD_Wake2.mat). The
+  percentage per channel is in the `description` column of each channels.tsv. Channels are not marked bad: the
+  release has no channel quality information.
+- `sourcedata/dryad-4f92n-deidentified/`: all released files (the 23 .mat files and README_for_SubA_Sleep1.pdf);
+  the only change is that MAT text-header and PDF metadata dates are reduced to month and year (day -> 01).
+  `DEIDENTIFICATION_MANIFEST.tsv` lists original and new sha-256.
+
+## Conversion
+- Values are written as BrainVision IEEE_FLOAT_32; every value of the float64 source is exactly representable in
+  float32 (checked per file), so values are identical. MNE read-back matches the source.
+- The release states the signals are raw, with only the amplifiers' 0.1 Hz hardware high-pass. The unit is not stated;
+  µV is assumed (amplitudes are consistent with µV).
+- Participant age, sex, handedness, seizure foci: article Table 1 (subject letters A-D match the release).
+
+## Privacy
+- No names, dates of recording or hospital identifiers in the files. The README PDF names the corresponding author
+  (contact e-mail), not patients. File-creation dates (MAT header, PDF metadata) reduced to month and year.
+
+## Additional metadata and localisation (added 2026-10-08)
+
+Compiled after the upload from the article, its supplement and the source deposit (each statement names its source). Text and sidecar metadata only; no data file was changed.
+
+Sources: P = Pahwa, Kusner, Hacker, Bundy, Weinberger, Leuthardt 2015, PLoS ONE 10(11):e0142947, doi:10.1371/journal.pone.0142947 (PMC4643046). R = deposit README_for_SubA_Sleep1.pdf (one page).
+
+**Reference.** All electrodes were referenced to a skull-facing electrode of the same size (P, Methods). The analysis also regressed out the mean of non-noisy electrodes (P).
+
+**Electrodes.** PMT subdural grids, 8x8, flat circular platinum electrodes of 2.3 mm diameter with 10 mm spacing, over the left frontal, temporal and parietal cortex (P, Methods and Fig 2).
+
+**Localisation.** The cortex was reconstructed from the pre-op T1 and electrodes located on the post-op CT. Electrodes and surface were co-registered to a common atlas space and projected onto the pial surface along the grid normal, keeping 10 mm spacing (after Hermes et al. 2010) (P, "Construction of Subject-averaged Cortical Maps"). The electrode positions for each subject appear only as figures (P Fig 2A; R). No coordinates or per-electrode anatomical labels were deposited, and the file channel order is not linked to grid position.
