@@ -15,7 +15,7 @@ ch13	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 13 of the release 'data' matrix
 ch14	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 14 of the release 'data' matrix
 ch15	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 15 of the release 'data' matrix
 ch16	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 16 of the release 'data' matrix
-ch17	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 17 of the release 'data' matrix; 74.3% of samples at the amplitude limit (|x| >= 5482.29)
+ch17	ECOG	µV	n/a	n/a	512.0	grid	bad	saturated: pinned at +5482.29 or -5482.46 (fraction in description)	column 17 of the release 'data' matrix; 74.3% of samples at the amplitude limit (|x| >= 5482.29)
 ch18	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 18 of the release 'data' matrix
 ch19	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 19 of the release 'data' matrix
 ch20	ECOG	µV	n/a	n/a	512.0	grid	good	n/a	column 20 of the release 'data' matrix
