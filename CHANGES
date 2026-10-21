@@ -1,3 +1,6 @@
+1.0.3 2026-10-21
+  - README: the README sampling rates (A 256 Hz, B-D 512 Hz) are confirmed by the 60 Hz mains peaks in all 23 files.
+
 1.0.2 2026-10-16
   - Restore the descriptive dataset Name recorded in the v1.0.0 history. Update generated metadata title and source hash.
 
