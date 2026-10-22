@@ -18,8 +18,8 @@ The .mat files contain only a 64-column 'data' matrix: no sampling rate, channel
 used here comes from the release README (README_for_SubA_Sleep1.pdf): subject A 256 Hz, subjects B, C and D 512 Hz.
 The article's Methods say the signals were "sampled at 256 Hz" for all patients. We follow the README, which is
 specific to the released files. The mains interference confirms these rates: read at them, all 23 files show a 60 Hz
-mains peak (B-D also 180 Hz and 300 Hz aliased to 212 Hz; A also 120 Hz). At the article's 256 Hz, the B-D peak would
-sit at 30 Hz.
+mains peak (B-D also 180 Hz and 300 Hz aliased to 212 Hz; A also 120 Hz in 6 of its 7 files, not in
+sub-A_task-sleep_acq-part2_run-2). At the article's 256 Hz, the B-D peak would sit at 30 Hz.
 
 ## Contents
 - `sub-<A-D>/ieeg/sub-<X>_task-<wake|sleep>[_acq-part<k>]_run-<n>_ieeg.*`: 23 files, 13.62 h in
