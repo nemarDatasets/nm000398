@@ -1,3 +1,6 @@
+1.0.3 2026-10-21
+  - channels.tsv: channels with more than 10% of samples at the amplitude limit (|x| >= 5482.29) are marked bad (sub-B ch17 in 6 files, sub-D ch47 in 2 files; 73.7-74.6% of samples).
+
 1.0.2 2026-10-16
   - Restore the descriptive dataset Name recorded in the v1.0.0 history. Update generated metadata title and source hash.
 
