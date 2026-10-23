@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Wakeful and sleep-like states in subdural ECoG (Pahwa et al., 2015): 4 patients, 64-channel grids",
-  "description": "Subdural electrocorticography (ECoG) recordings from four epilepsy patients implanted with 8x8 grids over left frontal, temporal and parietal cortex during clinical monitoring. For each patient, two wakeful and two sleep-like epochs were identified from video and audio of natural behaviour, with no task. The data support work on detecting wakeful and sleep-like states for ECoG brain-computer interface applications.",
-  "methods_description": "64-channel subdural platinum grids (2.3 mm electrodes, 10 mm spacing) were recorded during clinical monitoring, referenced to a skull-facing electrode, with a 0.1 Hz hardware high-pass. Sampling rates were 256 Hz (subject A) and 512 Hz (subjects B, C, D) per the release README. Wake and sleep-like epochs were identified from video/audio. Source MAT data were converted to BrainVision float32 format.",
+  "description": "Subdural electrocorticography (ECoG) recordings from four patients with intractable epilepsy, using 8x8 grids over left frontal, temporal and parietal cortex during clinical monitoring. For each patient, two wakeful and two sleep-like epochs were identified from video and audio of natural behaviour, with no task. The data support work on detecting wakeful and sleep-like states for future ECoG brain-computer interface applications.",
+  "methods_description": "64-channel subdural platinum grids (2.3 mm electrodes, 10 mm spacing) recorded raw signals with a 0.1 Hz hardware high-pass, referenced to a skull-facing electrode. Sampling rates were 256 Hz for subject A and 512 Hz for subjects B, C and D, taken from the release README. Wake and sleep epochs were identified from video and audio during clinical monitoring. Electrodes were localised on post-operative CT co-registered to pre-operative T1 MRI. The data were converted to BrainVision float32 format.",
   "license": "CC0-1.0",
   "dataset_type": "raw",
   "authors": {
@@ -103,5 +103,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "eb643f0087f28fba29e19b1d3e9ff76e8b5c67dfaa8b34c22d0614cc8f51b36a"
+  "source_hash": "378ae069031df73ab14d7002d0b50f1592b599392d940a7f8cc0592b718b04af"
 }
