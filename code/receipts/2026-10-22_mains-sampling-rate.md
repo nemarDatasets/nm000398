@@ -5,7 +5,7 @@
 **PR**: nemarDatasets/nm000398#4, receipt on top of head `477dbefe`.
 
 ## Source
-- NEMAR nm000398 `origin/main` `86629adff76707e0e5852ee93bd4c1d35695a80f`: all 23 `sub-*/ieeg/*_ieeg.{vhdr,eeg}`; each equals that commit (`.eeg` sha256 = git-annex key, `.vhdr` = git blob; column "vhdr+eeg == main"). The rate in each `.vhdr` is the one under test.
+- NEMAR nm000398 `origin/main` `b5003d876a657b5fe9c7fc672a4e9897acbb544d`: all 23 `sub-*/ieeg/*_ieeg.{vhdr,eeg}`; each equals that commit (`.eeg` sha256 = git-annex key, `.vhdr` = git blob; column "vhdr+eeg == main"). The rate in each `.vhdr` is the one under test.
 - Rates: release README `README_for_SubA_Sleep1.pdf` (Dryad doi:10.5061/dryad.4f92n, version 1), page 1: "Subject A; Sampling Frequency = 256 Hz", "Subject B; Sampling Frequency = 512 Hz", likewise C and D 512 Hz. The copy read is `sourcedata/dryad-4f92n-deidentified/README_for_SubA_Sleep1.pdf`, sha256 `ab560f3b…41bb13` = its git-annex key; `DEIDENTIFICATION_MANIFEST.tsv` lists the Dryad original (sha256 `6404bd77…4fca24`, same length; only the PDF CreationDate/ModDate day differs).
 - Article (Pahwa et al. 2015, PLoS ONE, doi:10.1371/journal.pone.0142947), Methods: "sampled at 256 Hz" for all patients.
 
@@ -63,4 +63,4 @@ Read at 512 Hz (subjects B-D):
 ```
 uv run --no-project --with mne==1.13.2 --with scipy --with pandas python code/receipts/2026-10-22_mains-sampling-rate.py <nm000398 root> <nm000398 git clone>
 ```
-Run on 2026-10-22 (Slurm job 13449206); the root was a NEMAR copy of `origin/main`, the clone gives `origin/main` for the checks.
+Run on 2026-10-23 (Slurm job 13542298; first run 2026-10-22, job 13449206, at `86629adf`, same tables); the root was a NEMAR copy of `origin/main`, the clone gives `origin/main` for the checks.
