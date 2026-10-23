@@ -31,8 +31,8 @@ sub-A_task-sleep_acq-part2_run-2). At the article's 256 Hz, the B-D peak would s
   images in the README PDF (kept in sourcedata); no coordinates or labels are released.
 - Several files have many samples at the amplitude limit |x| = 5482.29 (saturation), mostly subjects B and D
   (more than half of the samples of at least one channel in: SubB_Sleep1.mat, SubB_Sleep2_part1.mat, SubB_Sleep2_part2.mat, SubB_Wake1.mat, SubB_Wake2_part1.mat, SubB_Wake2_part2.mat, SubD_Sleep2.mat, SubD_Wake2.mat). The
-  percentage per channel is in the `description` column of each channels.tsv. Channels are not marked bad: the
-  release has no channel quality information.
+  percentage per channel is in the `description` column of each channels.tsv. Channels with more than 10% of
+  samples at the limit are marked `bad` (B ch17 in 6 files, D ch47 in 2 files: 73.7-74.6%; all others <= 0.7%).
 - `sourcedata/dryad-4f92n-deidentified/`: all released files (the 23 .mat files and README_for_SubA_Sleep1.pdf);
   the only change is that MAT text-header and PDF metadata dates are reduced to month and year (day -> 01).
   `DEIDENTIFICATION_MANIFEST.tsv` lists original and new sha-256.
